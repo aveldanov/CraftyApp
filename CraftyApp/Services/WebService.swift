@@ -10,14 +10,17 @@ import Foundation
 
 class WebService {
     
-    func getRepos(url: URL, completion:[Repo]->()){
+    func getRepos(url: URL, completion: @escaping ([Any]?)->()){
         
         URLSession.shared.dataTask(with: url) { (data, response, error) in
             if let error = error{
+                print(error.localizedDescription)
+                completion(nil)
+            }else if let data = data{
                 
-                
+                print(data)
             }
-        }
+        }.resume()
         
     }
 }

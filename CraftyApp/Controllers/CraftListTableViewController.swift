@@ -17,6 +17,10 @@ class CraftListTableViewController: UITableViewController {
     
     private func setup(){
         navigationController?.navigationBar.prefersLargeTitles = true
+        let url = URL(string: "https://api.github.com/users/intuit/repos")!
+        WebService().getRepos(url: url){_ in
+            
+        }
     }
 
     // MARK: - Table view data source
