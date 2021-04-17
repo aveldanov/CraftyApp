@@ -14,6 +14,7 @@
 		21309A3B262A80AD00836099 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21309A3A262A80AD00836099 /* Assets.xcassets */; };
 		21309A3E262A80AD00836099 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21309A3C262A80AD00836099 /* LaunchScreen.storyboard */; };
 		21309A47262A810100836099 /* CraftListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21309A46262A810100836099 /* CraftListTableViewController.swift */; };
+		213B9A1D262A888F0065EF36 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213B9A1C262A888F0065EF36 /* WebService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		21309A3D262A80AD00836099 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		21309A3F262A80AD00836099 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		21309A46262A810100836099 /* CraftListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CraftListTableViewController.swift; sourceTree = "<group>"; };
+		213B9A1C262A888F0065EF36 /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 		21309A2D262A80AA00836099 /* CraftyApp */ = {
 			isa = PBXGroup;
 			children = (
+				213B9A1B262A88720065EF36 /* Services */,
 				21309A2E262A80AA00836099 /* AppDelegate.swift */,
 				21309A49262A812400836099 /* Controllers */,
 				21309A30262A80AA00836099 /* SceneDelegate.swift */,
@@ -76,6 +79,14 @@
 				21309A46262A810100836099 /* CraftListTableViewController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		213B9A1B262A88720065EF36 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				213B9A1C262A888F0065EF36 /* WebService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,6 +162,7 @@
 				21309A39262A80AA00836099 /* CraftyApp.xcdatamodeld in Sources */,
 				21309A2F262A80AA00836099 /* AppDelegate.swift in Sources */,
 				21309A47262A810100836099 /* CraftListTableViewController.swift in Sources */,
+				213B9A1D262A888F0065EF36 /* WebService.swift in Sources */,
 				21309A31262A80AA00836099 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

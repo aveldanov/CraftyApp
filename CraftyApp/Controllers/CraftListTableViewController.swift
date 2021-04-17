@@ -15,8 +15,8 @@ class CraftListTableViewController: UITableViewController {
     }
     
     
-    private setup(){
-        
+    private func setup(){
+        navigationController?.navigationBar.prefersLargeTitles = true
     }
 
     // MARK: - Table view data source
