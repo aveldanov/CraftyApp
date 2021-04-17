@@ -9,23 +9,23 @@
 /* Begin PBXBuildFile section */
 		21309A2F262A80AA00836099 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21309A2E262A80AA00836099 /* AppDelegate.swift */; };
 		21309A31262A80AA00836099 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21309A30262A80AA00836099 /* SceneDelegate.swift */; };
-		21309A33262A80AA00836099 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21309A32262A80AA00836099 /* ViewController.swift */; };
 		21309A36262A80AA00836099 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21309A34262A80AA00836099 /* Main.storyboard */; };
 		21309A39262A80AA00836099 /* CraftyApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 21309A37262A80AA00836099 /* CraftyApp.xcdatamodeld */; };
 		21309A3B262A80AD00836099 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21309A3A262A80AD00836099 /* Assets.xcassets */; };
 		21309A3E262A80AD00836099 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21309A3C262A80AD00836099 /* LaunchScreen.storyboard */; };
+		21309A47262A810100836099 /* CraftListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21309A46262A810100836099 /* CraftListTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		21309A2B262A80AA00836099 /* CraftyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CraftyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		21309A2E262A80AA00836099 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		21309A30262A80AA00836099 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		21309A32262A80AA00836099 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		21309A35262A80AA00836099 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		21309A38262A80AA00836099 /* CraftyApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CraftyApp.xcdatamodel; sourceTree = "<group>"; };
 		21309A3A262A80AD00836099 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		21309A3D262A80AD00836099 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		21309A3F262A80AD00836099 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		21309A46262A810100836099 /* CraftListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CraftListTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,8 +59,8 @@
 			isa = PBXGroup;
 			children = (
 				21309A2E262A80AA00836099 /* AppDelegate.swift */,
+				21309A49262A812400836099 /* Controllers */,
 				21309A30262A80AA00836099 /* SceneDelegate.swift */,
-				21309A32262A80AA00836099 /* ViewController.swift */,
 				21309A34262A80AA00836099 /* Main.storyboard */,
 				21309A3A262A80AD00836099 /* Assets.xcassets */,
 				21309A3C262A80AD00836099 /* LaunchScreen.storyboard */,
@@ -68,6 +68,14 @@
 				21309A37262A80AA00836099 /* CraftyApp.xcdatamodeld */,
 			);
 			path = CraftyApp;
+			sourceTree = "<group>";
+		};
+		21309A49262A812400836099 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				21309A46262A810100836099 /* CraftListTableViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,8 +149,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				21309A39262A80AA00836099 /* CraftyApp.xcdatamodeld in Sources */,
-				21309A33262A80AA00836099 /* ViewController.swift in Sources */,
 				21309A2F262A80AA00836099 /* AppDelegate.swift in Sources */,
+				21309A47262A810100836099 /* CraftListTableViewController.swift in Sources */,
 				21309A31262A80AA00836099 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
