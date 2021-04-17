@@ -10,7 +10,7 @@ import Foundation
 
 class WebService {
     
-    func getRepos(url: URL, completion: @escaping ([Any]?)->()){
+    func getRepos(url: URL, completion: @escaping ([Repo]?)->()){
         
         URLSession.shared.dataTask(with: url) { (data, response, error) in
             if let error = error{
@@ -18,7 +18,12 @@ class WebService {
                 completion(nil)
             }else if let data = data{
                 
-                print(data)
+                
+                let repoList = JSONDecoder().decode([Repo].self, from: data)
+                print(repoList)
+                
+                
+                
             }
         }.resume()
         

@@ -7,7 +7,7 @@
 
 import UIKit
 
-class CraftListTableViewController: UITableViewController {
+class RepoListTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
