@@ -16,6 +16,7 @@
 		21309A47262A810100836099 /* RepoListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21309A46262A810100836099 /* RepoListTableViewController.swift */; };
 		213B9A1D262A888F0065EF36 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213B9A1C262A888F0065EF36 /* WebService.swift */; };
 		213B9A22262AB63E0065EF36 /* Repo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213B9A21262AB63E0065EF36 /* Repo.swift */; };
+		213B9A27262ABEE70065EF36 /* RepoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213B9A26262ABEE70065EF36 /* RepoViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		21309A46262A810100836099 /* RepoListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoListTableViewController.swift; sourceTree = "<group>"; };
 		213B9A1C262A888F0065EF36 /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
 		213B9A21262AB63E0065EF36 /* Repo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repo.swift; sourceTree = "<group>"; };
+		213B9A26262ABEE70065EF36 /* RepoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 		21309A2D262A80AA00836099 /* CraftyApp */ = {
 			isa = PBXGroup;
 			children = (
+				213B9A25262ABEAC0065EF36 /* ViewModels */,
 				213B9A20262AB62B0065EF36 /* Models */,
 				213B9A1B262A88720065EF36 /* Services */,
 				21309A2E262A80AA00836099 /* AppDelegate.swift */,
@@ -98,6 +101,14 @@
 				213B9A21262AB63E0065EF36 /* Repo.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		213B9A25262ABEAC0065EF36 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				213B9A26262ABEE70065EF36 /* RepoViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,6 +183,7 @@
 			files = (
 				21309A39262A80AA00836099 /* CraftyApp.xcdatamodeld in Sources */,
 				21309A2F262A80AA00836099 /* AppDelegate.swift in Sources */,
+				213B9A27262ABEE70065EF36 /* RepoViewModel.swift in Sources */,
 				21309A47262A810100836099 /* RepoListTableViewController.swift in Sources */,
 				213B9A22262AB63E0065EF36 /* Repo.swift in Sources */,
 				213B9A1D262A888F0065EF36 /* WebService.swift in Sources */,

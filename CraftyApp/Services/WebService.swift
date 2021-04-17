@@ -23,7 +23,7 @@ class WebService {
                 
                 if let repoList = repoList{
                     print(repoList)
-
+                    completion(repoList)
                 }
                 
             }
