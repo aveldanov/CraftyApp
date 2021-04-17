@@ -8,8 +8,8 @@
 import Foundation
 
 class Repo: Decodable{
-    let title: String
-    let description: String
-    let watchers: String
-    let size: String
+    let title: String?
+    let description: String?
+    let watchers: Int?
+    let size: Int?
 }
