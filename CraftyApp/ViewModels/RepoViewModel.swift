@@ -17,7 +17,7 @@ extension RepoListViewModel{
         return 1
     }
     
-    var numberOfRowsInSection: Int{
+    func numberOfRowsInSection(_ section: Int) -> Int{
         return repos.count
     }
     

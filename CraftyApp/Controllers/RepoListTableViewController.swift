@@ -9,6 +9,9 @@ import UIKit
 
 class RepoListTableViewController: UITableViewController {
 
+    private var repoListVM: RepoListViewModel!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setup()
@@ -18,7 +21,18 @@ class RepoListTableViewController: UITableViewController {
     private func setup(){
         navigationController?.navigationBar.prefersLargeTitles = true
         let url = URL(string: "https://api.github.com/users/intuit/repos")!
-        WebService().getRepos(url: url){_ in
+        
+        WebService().getRepos(url: url) { repos in
+            
+            if let repos = repos{
+                
+                self.repoListVM = RepoListViewModel(repos: repos)
+
+                DispatchQueue.main.async {
+                    self.tableView.reloadData()
+                }
+                
+            }
             
         }
     }
@@ -26,22 +40,32 @@ class RepoListTableViewController: UITableViewController {
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        return 0
+        return repoListVM == nil ? 0 : repoListVM.numberOfSections
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+        return self.repoListVM.numberOfRowsInSection(section)
     }
 
-    /*
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
 
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as? RepoTableViewCell else {
+            fatalError("RepoTableViewCell is not found")
+            
+            
+            
+        }
+
+        let repoVM = repoListVM.repoAtIndex(indexPath.row)
         // Configure the cell...
 
+        cell.nameLabel.text = repoVM.name
+        cell.descriptionLabel.text = repoVM.description
+        
+        
         return cell
     }
-    */
+
 
     /*
     // Override to support conditional editing of the table view.

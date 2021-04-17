@@ -16,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="80" id="SFp-Hw-lsn" customClass="RepoTableViewCell" customModule="CraftyApp" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="80" id="SFp-Hw-lsn" customClass="RepoTableViewCell" customModule="CraftyApp" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="414" height="80"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="SFp-Hw-lsn" id="a6G-Vy-gLX">
@@ -48,6 +48,10 @@
                                         <constraint firstItem="zGK-O2-XHy" firstAttribute="leading" secondItem="a6G-Vy-gLX" secondAttribute="leadingMargin" id="l0d-R0-L1h"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="descriptionLabel" destination="nkj-rW-LTe" id="3s6-Tk-fuN"/>
+                                    <outlet property="nameLabel" destination="t9e-hU-D8V" id="Xza-E3-Q3w"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
