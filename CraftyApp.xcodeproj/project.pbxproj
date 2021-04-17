@@ -64,13 +64,13 @@
 		21309A2D262A80AA00836099 /* CraftyApp */ = {
 			isa = PBXGroup;
 			children = (
+				213B9A2A262AC1260065EF36 /* View */,
 				213B9A25262ABEAC0065EF36 /* ViewModels */,
 				213B9A20262AB62B0065EF36 /* Models */,
 				213B9A1B262A88720065EF36 /* Services */,
 				21309A2E262A80AA00836099 /* AppDelegate.swift */,
 				21309A49262A812400836099 /* Controllers */,
 				21309A30262A80AA00836099 /* SceneDelegate.swift */,
-				21309A34262A80AA00836099 /* Main.storyboard */,
 				21309A3A262A80AD00836099 /* Assets.xcassets */,
 				21309A3C262A80AD00836099 /* LaunchScreen.storyboard */,
 				21309A3F262A80AD00836099 /* Info.plist */,
@@ -109,6 +109,14 @@
 				213B9A26262ABEE70065EF36 /* RepoViewModel.swift */,
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		213B9A2A262AC1260065EF36 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				21309A34262A80AA00836099 /* Main.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
