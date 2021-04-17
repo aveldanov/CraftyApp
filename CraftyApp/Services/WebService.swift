@@ -20,9 +20,11 @@ class WebService {
                 
                 
                 let repoList = try? JSONDecoder().decode([Repo].self, from: data)
-                print(repoList)
                 
-                
+                if let repoList = repoList{
+                    print(repoList)
+
+                }
                 
             }
         }.resume()

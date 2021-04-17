@@ -7,9 +7,17 @@
 
 import Foundation
 
-class Repo: Decodable{
-    let title: String?
+struct Repo: Decodable{
+    let name: String?
     let description: String?
     let watchers: Int?
     let size: Int?
+//    let license: [String:String?]?
+    let license: License?
+
+    
+}
+
+struct License: Decodable {
+    let key: String?
 }
