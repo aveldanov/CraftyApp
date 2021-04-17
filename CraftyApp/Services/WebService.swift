@@ -19,7 +19,7 @@ class WebService {
             }else if let data = data{
                 
                 
-                let repoList = JSONDecoder().decode([Repo].self, from: data)
+                let repoList = try? JSONDecoder().decode([Repo].self, from: data)
                 print(repoList)
                 
                 
