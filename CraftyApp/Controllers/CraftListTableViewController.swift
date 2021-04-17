@@ -11,6 +11,12 @@ class CraftListTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        setup()
+    }
+    
+    
+    private setup(){
+        
     }
 
     // MARK: - Table view data source
